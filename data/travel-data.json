@@ -1,0 +1,291 @@
+{
+  "destinations": [
+    {
+      "id": "maldives",
+      "name": "المالديف",
+      "status": "active",
+      "description": "منتجعات بحرية، تنقلات بالقارب، وتجربة شهر عسل هادئة بتكلفة تتغير حسب الموسم والمنتجع.",
+      "imageUrl": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=900&q=80",
+      "sourceCurrency": "USD",
+      "sarRate": 3.75,
+      "pricingNotes": "المنتجعات الفاخرة تتأثر كثيرا بالتاريخ ونوع الفيلا."
+    },
+    {
+      "id": "malaysia",
+      "name": "ماليزيا",
+      "status": "active",
+      "description": "مدن نابضة وطبيعة وجزر، مناسبة لشهر العسل والعوائل مع خيارات فندقية واسعة.",
+      "imageUrl": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=900&q=80",
+      "sourceCurrency": "MYR",
+      "sarRate": 0.8,
+      "pricingNotes": "الأسعار تقديرية للمدن السياحية الرئيسية."
+    },
+    {
+      "id": "indonesia",
+      "name": "إندونيسيا",
+      "status": "active",
+      "description": "بالي وجاكرتا وبرامج طبيعة ورحلات يومية مع سائق خاص بأسعار مرنة.",
+      "imageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80",
+      "sourceCurrency": "USD",
+      "sarRate": 3.75,
+      "pricingNotes": "الجولات تختلف حسب المسافات وعدد ساعات السائق."
+    }
+  ],
+  "hotelRates": [
+    {
+      "destinationId": "maldives",
+      "level": "4 نجوم",
+      "nightlyRate": 1250,
+      "occupancy": 2,
+      "season": "normal"
+    },
+    {
+      "destinationId": "maldives",
+      "level": "5 نجوم",
+      "nightlyRate": 2100,
+      "occupancy": 2,
+      "season": "normal"
+    },
+    {
+      "destinationId": "maldives",
+      "level": "منتجع فاخر",
+      "nightlyRate": 3600,
+      "occupancy": 2,
+      "season": "normal"
+    },
+    {
+      "destinationId": "malaysia",
+      "level": "3 نجوم",
+      "nightlyRate": 260,
+      "occupancy": 2,
+      "season": "normal"
+    },
+    {
+      "destinationId": "malaysia",
+      "level": "4 نجوم",
+      "nightlyRate": 430,
+      "occupancy": 2,
+      "season": "normal"
+    },
+    {
+      "destinationId": "malaysia",
+      "level": "5 نجوم",
+      "nightlyRate": 720,
+      "occupancy": 2,
+      "season": "normal"
+    },
+    {
+      "destinationId": "indonesia",
+      "level": "3 نجوم",
+      "nightlyRate": 240,
+      "occupancy": 2,
+      "season": "normal"
+    },
+    {
+      "destinationId": "indonesia",
+      "level": "4 نجوم",
+      "nightlyRate": 410,
+      "occupancy": 2,
+      "season": "normal"
+    },
+    {
+      "destinationId": "indonesia",
+      "level": "5 نجوم",
+      "nightlyRate": 760,
+      "occupancy": 2,
+      "season": "normal"
+    }
+  ],
+  "tours": [
+    {
+      "id": "maldives-sandbank",
+      "destinationId": "maldives",
+      "name": "رحلة جزيرة رملية",
+      "price": 780,
+      "priceType": "per_car",
+      "hours": 4,
+      "includesDriver": true
+    },
+    {
+      "id": "maldives-snorkeling",
+      "destinationId": "maldives",
+      "name": "سنوركلنق وغداء بحري",
+      "price": 360,
+      "priceType": "per_person",
+      "hours": 5,
+      "includesDriver": true
+    },
+    {
+      "id": "malaysia-kl",
+      "destinationId": "malaysia",
+      "name": "جولة كوالالمبور",
+      "price": 420,
+      "priceType": "per_car",
+      "hours": 8,
+      "includesDriver": true
+    },
+    {
+      "id": "malaysia-genting",
+      "destinationId": "malaysia",
+      "name": "مرتفعات جنتنق",
+      "price": 520,
+      "priceType": "per_car",
+      "hours": 9,
+      "includesDriver": true
+    },
+    {
+      "id": "indonesia-ubud",
+      "destinationId": "indonesia",
+      "name": "جولة أوبود والشلالات",
+      "price": 480,
+      "priceType": "per_car",
+      "hours": 10,
+      "includesDriver": true
+    },
+    {
+      "id": "indonesia-nusa",
+      "destinationId": "indonesia",
+      "name": "نوسا بينيدا",
+      "price": 390,
+      "priceType": "per_person",
+      "hours": 9,
+      "includesDriver": false
+    }
+  ],
+  "transfers": [
+    {
+      "id": "maldives-round",
+      "destinationId": "maldives",
+      "service": "استقبال وتوديع",
+      "price": 950
+    },
+    {
+      "id": "malaysia-round",
+      "destinationId": "malaysia",
+      "service": "استقبال وتوديع",
+      "price": 260
+    },
+    {
+      "id": "indonesia-round",
+      "destinationId": "indonesia",
+      "service": "استقبال وتوديع",
+      "price": 240
+    }
+  ],
+  "drivers": [
+    {
+      "destinationId": "maldives",
+      "dailyRate": 0,
+      "hoursLimit": 0,
+      "carType": "حسب المنتجع"
+    },
+    {
+      "destinationId": "malaysia",
+      "dailyRate": 430,
+      "hoursLimit": 10,
+      "carType": "سيارة خاصة"
+    },
+    {
+      "destinationId": "indonesia",
+      "dailyRate": 390,
+      "hoursLimit": 10,
+      "carType": "سيارة خاصة"
+    }
+  ],
+  "dailyExpenses": [
+    {
+      "destinationId": "maldives",
+      "level": "اقتصادي",
+      "perPersonDaily": 170
+    },
+    {
+      "destinationId": "maldives",
+      "level": "متوسط",
+      "perPersonDaily": 260
+    },
+    {
+      "destinationId": "maldives",
+      "level": "فاخر",
+      "perPersonDaily": 430
+    },
+    {
+      "destinationId": "malaysia",
+      "level": "اقتصادي",
+      "perPersonDaily": 95
+    },
+    {
+      "destinationId": "malaysia",
+      "level": "متوسط",
+      "perPersonDaily": 160
+    },
+    {
+      "destinationId": "malaysia",
+      "level": "فاخر",
+      "perPersonDaily": 280
+    },
+    {
+      "destinationId": "indonesia",
+      "level": "اقتصادي",
+      "perPersonDaily": 90
+    },
+    {
+      "destinationId": "indonesia",
+      "level": "متوسط",
+      "perPersonDaily": 150
+    },
+    {
+      "destinationId": "indonesia",
+      "level": "فاخر",
+      "perPersonDaily": 260
+    }
+  ],
+  "packages": [
+    {
+      "id": "pkg-maldives-5n",
+      "destinationId": "maldives",
+      "name": "مالديف 5 ليال منتجع 5 نجوم",
+      "nights": 5,
+      "persons": 2,
+      "hotelLevel": "5 نجوم",
+      "price": 12800,
+      "status": "available",
+      "notes": "يشمل إفطار وتنقلات حسب العرض."
+    },
+    {
+      "id": "pkg-malaysia-9n",
+      "destinationId": "malaysia",
+      "name": "ماليزيا شهر عسل 9 ليال",
+      "nights": 9,
+      "persons": 2,
+      "hotelLevel": "4 نجوم",
+      "price": 7900,
+      "status": "available",
+      "notes": "كوالالمبور ولنكاوي مع استقبال وتوديع."
+    },
+    {
+      "id": "pkg-bali-7n",
+      "destinationId": "indonesia",
+      "name": "بالي 7 ليال مع سائق",
+      "nights": 7,
+      "persons": 2,
+      "hotelLevel": "4 نجوم",
+      "price": 6800,
+      "status": "available",
+      "notes": "يشمل جولات مختارة وسائق خاص."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "هل السعر نهائي؟",
+      "answer": "السعر تقديري ويصبح نهائيا بعد التأكد من التوفر وتاريخ السفر."
+    },
+    {
+      "question": "هل تشمل الأسعار الطيران؟",
+      "answer": "الحاسبة تركز على الأرضي: الفنادق، الجولات، السائق، والاستقبال والتوديع. يمكن إضافة الطيران عند التواصل."
+    },
+    {
+      "question": "هل أستطيع تغيير مستوى الفندق؟",
+      "answer": "نعم، تغيير مستوى الفندق وعدد الليالي والأشخاص يغير النتيجة مباشرة."
+    }
+  ]
+}
