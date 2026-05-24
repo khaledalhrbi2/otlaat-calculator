@@ -3,6 +3,7 @@ import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 import { Cairo, Tajawal } from "next/font/google";
 
 const cairo = Cairo({
@@ -75,6 +76,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
