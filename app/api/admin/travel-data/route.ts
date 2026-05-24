@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getTravelData, saveLocalTravelData } from "@/lib/data";
+import { getTravelData, saveTravelData } from "@/lib/data";
 import type { TravelData } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
@@ -76,7 +76,7 @@ export async function POST(request: Request) {
       );
     }
 
-    await saveLocalTravelData(data);
+    await saveTravelData(data);
     return NextResponse.json({ ok: true });
   } catch (error) {
     console.error("Admin save error:", error);
