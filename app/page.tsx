@@ -31,7 +31,6 @@ const TravelCalculator = dynamic(
         جاري تحميل الحاسبة...
       </div>
     ),
-    ssr: false,
   }
 );
 
