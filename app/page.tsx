@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import {
   CalendarDays,
   CheckCircle2,
@@ -9,9 +10,30 @@ import {
   ShieldCheck,
   Sparkles,
 } from "lucide-react";
-import { TravelCalculator } from "@/components/TravelCalculator";
 import { formatSar } from "@/lib/calculator";
 import { getTravelData } from "@/lib/data";
+
+const TravelCalculator = dynamic(
+  () => import("@/components/TravelCalculator").then((m) => m.TravelCalculator),
+  {
+    loading: () => (
+      <div style={{
+        minHeight: "480px",
+        borderRadius: "20px",
+        background: "var(--paper)",
+        boxShadow: "var(--shadow-lg)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        color: "var(--text-muted)",
+        fontSize: "1rem"
+      }}>
+        جاري تحميل الحاسبة...
+      </div>
+    ),
+    ssr: false,
+  }
+);
 
 export default async function HomePage() {
   const data = await getTravelData();
@@ -82,13 +104,14 @@ export default async function HomePage() {
             </Link>
           </div>
           <div className="destination-grid">
-            {activeDestinations.slice(0, 3).map((destination) => (
+            {activeDestinations.slice(0, 3).map((destination, index) => (
               <article className="destination-card" key={destination.id}>
                 <Image
                   src={destination.imageUrl}
                   alt={destination.name}
                   width={900}
                   height={520}
+                  priority={index === 0}
                 />
                 <div className="card-body">
                   <h3>{destination.name}</h3>
