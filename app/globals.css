@@ -4,7 +4,7 @@
    ============================================================ */
 
 /* ====== Font Loading ====== */
-@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@400;600;700;800;900&display=swap");
+/* Fonts loaded via next/font/google in layout.tsx for better performance */
 
 /* ====== Design Tokens ====== */
 :root {
@@ -85,8 +85,8 @@
   --space-20: 5rem;
 
   /* Typography */
-  --font-display: "Cairo", "Tajawal", system-ui, sans-serif;
-  --font-body: "Tajawal", system-ui, sans-serif;
+  --font-display: var(--font-cairo), "Cairo", system-ui, sans-serif;
+  --font-body: var(--font-tajawal), "Tajawal", system-ui, sans-serif;
 
   /* Transitions */
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
